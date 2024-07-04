@@ -20,3 +20,22 @@ Consigli del giorno
 1.  Scriviamo sempre in italiano i passaggi che vogliamo fare
 2.  Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andiamo avanti.
 Buon lavoro e buon divertimento!
+
+
+
+<!-----------------------------------
+    PSEUDO-CODICE PARI & DISPARI
+------------------------------------>
+1.  Inizializza la variabile "oddEven"
+2.  Entra in un ciclo Do, While finchè non gli viene assegnato un valore stringa in input "pari" o "dispari" (+ setLowerChar)
+3.  Inizializza una variabile "userNumber"
+4.  Entra in un ciclo Do,While finchè non gli viene assegnato un valore in input pari a un numero da 1 a 6
+5.  Richiama la funzione "randomDiceNumber" per generare un valore random da 1 a 6 e assegnarlo a "pcNumber"
+6.  Inizializza una variabile "diceSum" e dagli valore "userNumber" + "pcNumber"
+7.  Richiama la funzione "CheckEvenOdd" e passagli la "diceSum"
+8.  Stampa a schermo "result"
+
+0.  Creare una funzione "randomDiceNumber"
+    1.  Genera un numero casuale da 1 a 6
+0.  Creare una funzione "CheckWinner"
+    1.  SE 
