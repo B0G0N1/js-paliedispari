@@ -26,16 +26,24 @@ Buon lavoro e buon divertimento!
 <!-----------------------------------
     PSEUDO-CODICE PARI & DISPARI
 ------------------------------------>
-1.  Inizializza la variabile "oddEven"
+1.  Inizializza la variabile "pronostic"
 2.  Entra in un ciclo Do, While finchè non gli viene assegnato un valore stringa in input "pari" o "dispari" (+ setLowerChar)
 3.  Inizializza una variabile "userNumber"
 4.  Entra in un ciclo Do,While finchè non gli viene assegnato un valore in input pari a un numero da 1 a 6
 5.  Richiama la funzione "randomDiceNumber" per generare un valore random da 1 a 6 e assegnarlo a "pcNumber"
 6.  Inizializza una variabile "diceSum" e dagli valore "userNumber" + "pcNumber"
 7.  Richiama la funzione "CheckEvenOdd" e passagli la "diceSum"
-8.  Stampa a schermo "result"
+8.  SE "pronostic" === "oddEven"
+        ALLORA  Stampa a schermo "Hai vinto !!!"
+        ALTRIMENTI  Stampa a schermo "Hai perso ..."
+
 
 0.  Creare una funzione "randomDiceNumber"
     1.  Genera un numero casuale da 1 a 6
-0.  Creare una funzione "CheckWinner"
-    1.  SE 
+0.  Creare una funzione "CheckEvenOdd"
+    1.  Prendi in input "num"
+    2.  Inizializza "OddEven"
+    3.  SE num % 0 === 0
+            ALLORA  "oddEven" = "pari"
+            ALTRIMENTI  "oddEven" = "dispari"
+    4. Return "oddEven"
