@@ -74,8 +74,8 @@ Buon lavoro e buon divertimento!
             ALTRIMENTI "palindromic" = false;
 
 <!-- Devo visualizzare il codice per decidere come procedere -->
-for (let i = string.lenght; i > 0; i--)
-    reverseString.push(string.lenght[i]);
+for (let i = str.lenght; i > 0; i--)
+    reverseString.push(str.lenght[i]);
 
 
 

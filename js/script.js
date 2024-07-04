@@ -56,6 +56,7 @@
 
 
 let string;
+let palindromic;
 // Per controllo input
 let letters = '0123456789 ';
 let isValid = true;
@@ -69,3 +70,27 @@ do {
         }
     }
 } while (!isValid);
+
+
+palindromic = checkPalindromic(string);
+
+if (palindromic === true) {
+    alert("La frase è palindroma");
+}
+else {
+    alert("La frase non è palindroma");
+}
+
+
+function checkPalindromic(str) {
+    let reverseString;
+    for (let i = str.lenght; i > 0; i--) {
+        reverseString.push(str.lenght[i]);
+    }
+    if (reverseString === str) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
