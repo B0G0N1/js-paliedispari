@@ -81,3 +81,10 @@ for (let i = str.lenght; i > 0; i--)
 
 <!-- bonus checkPalindromicString-->
 DIVIDO A META LA STRINGA E CONTROLLO LE LETTERE PARTENDO DA INIZIO E FINE
+
+check = true;
+for (let i = 0; i <= str.length/2; i++) {
+    if (str[i] != str[str.length-i])
+        check = false;
+}
+return check;

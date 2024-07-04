@@ -57,40 +57,45 @@
 
 let string;
 let palindromic;
-// Per controllo input
 let letters = '0123456789 ';
-let isValid = true;
+let isValid;
 
+// FOR per verificare che la parola non contenga spazi, mi sono aiutato guardando online
 do {
+    isValid = true;
     string = prompt("Inserisci la parola da controllare:").toLowerCase();
-    // FOR per verificare che la parola non contenga spazi, mi sono aiutato guardando online
     for (let i = 0; i < string.length; i++) {
         if (letters.includes(string[i])) {
             isValid = false;
+            alert("La parola non deve contenere numeri o spazi. Riprova.");
         }
     }
 } while (!isValid);
 
-
 palindromic = checkPalindromic(string);
 
-if (palindromic === true) {
-    alert("La frase è palindroma");
+if (palindromic) {
+    alert("La parola è palindroma");
+} else {
+    alert("La parola non è palindroma");
 }
-else {
-    alert("La frase non è palindroma");
-}
-
 
 function checkPalindromic(str) {
-    let reverseString;
-    for (let i = str.lenght; i > 0; i--) {
-        reverseString.push(str.lenght[i]);
+    let reverseString = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        reverseString += str[i];
     }
-    if (reverseString === str) {
-        return true;
+    return reverseString === str;
+}
+
+
+function checkPalindromicBonus(str) {
+    let check = true;
+    for (let i = 0; i < str.length / 2; i++) {
+        if (str[i] !== str[str.length - 1 - i]) {
+            check = false;
+            break;
+        }
     }
-    else {
-        return false;
-    }
+    return check;
 }
