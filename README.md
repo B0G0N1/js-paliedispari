@@ -47,3 +47,21 @@ Buon lavoro e buon divertimento!
             ALLORA  "oddEven" = "pari"
             ALTRIMENTI  "oddEven" = "dispari"
     4. Return "oddEven"
+
+
+
+
+<!------------------------------
+    PSEUDO-CODICE PALINDROMA
+-------------------------------->
+1.  Inizializza la variabile "palindromicWord"
+2.  Entra in un ciclo Do, While finchè non gli viene assegnato un valore stringa senza spazi e numeri (+ setLowerChar)
+    1. Con un ciclo FOR ?
+3.  Controllare se la parola è palindroma con la funzione "checkPalindromic"
+
+
+0.  Creare una funzione "checkPalindromic"
+
+    2 MODI
+    INVERTO LA STRINGA E LA CONTOLLO
+    DIVITO A META LA STRINGA E CONTROLLO LE LETTERE PARTENDO DA INIZIO E FINE
