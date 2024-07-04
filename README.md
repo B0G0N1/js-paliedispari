@@ -43,7 +43,7 @@ Buon lavoro e buon divertimento!
 0.  Creare una funzione "CheckEvenOdd"
     1.  Prendi in input "num"
     2.  Inizializza "OddEven"
-    3.  SE num % 0 === 0
+    3.  SE num % 2 === 0
             ALLORA  "oddEven" = "pari"
             ALTRIMENTI  "oddEven" = "dispari"
     4. Return "oddEven"
