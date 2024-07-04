@@ -54,7 +54,7 @@ Buon lavoro e buon divertimento!
 <!------------------------------
     PSEUDO-CODICE PALINDROMA
 -------------------------------->
-1.  Inizializza la variabile "str"
+1.  Inizializza la variabile "string"
 2.  Inizializza la variabile "palindromic"
 2.  Entra in un ciclo Do, While finchè non gli viene assegnato un valore stringa senza spazi e numeri (+ setLowerChar)
     1. Con un if (+ includes) ?
@@ -65,7 +65,7 @@ Buon lavoro e buon divertimento!
 
 
 0.  Creare una funzione "checkPalindromic"
-    1. Prendi in input "string" ("palindromicWord")
+    1. Prendi in input "str" ("palindromicWord")
     2. Crea una variabile "reverseString"
     3.  Ciclo la parola string (FOR)
         1.  Aggiungo a "reverseString" lettera per lettera di "string" ma invertite
