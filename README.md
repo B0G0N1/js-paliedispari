@@ -41,7 +41,7 @@ Buon lavoro e buon divertimento!
 0.  Creare una funzione "randomDiceNumber"
     1.  Genera un numero casuale da 1 a 6
 0.  Creare una funzione "CheckEvenOdd"
-    1.  Prendi in input "num"
+    1.  Prendi in input "num" ("oddEven")
     2.  Inizializza "OddEven"
     3.  SE num % 2 === 0
             ALLORA  "oddEven" = "pari"
@@ -54,14 +54,30 @@ Buon lavoro e buon divertimento!
 <!------------------------------
     PSEUDO-CODICE PALINDROMA
 -------------------------------->
-1.  Inizializza la variabile "palindromicWord"
+1.  Inizializza la variabile "str"
+2.  Inizializza la variabile "palindromic"
 2.  Entra in un ciclo Do, While finchè non gli viene assegnato un valore stringa senza spazi e numeri (+ setLowerChar)
-    1. Con un ciclo FOR ?
+    1. Con un if (+ includes) ?
 3.  Controllare se la parola è palindroma con la funzione "checkPalindromic"
+4.  SE "palindromic" === true
+        ALLORA alert("La parola "str" è palindroma")
+        ALTRIMENTI alert("La parola "str" non è palindroma")
 
 
 0.  Creare una funzione "checkPalindromic"
+    1. Prendi in input "string" ("palindromicWord")
+    2. Crea una variabile "reverseString"
+    3.  Ciclo la parola string (FOR)
+        1.  Aggiungo a "reverseString" lettera per lettera di "string" ma invertite
+    4.  SE Confronto "string" con "reverseString"
+            ALLORA "palindromic" = true;
+            ALTRIMENTI "palindromic" = false;
 
-    2 MODI
-    INVERTO LA STRINGA E LA CONTOLLO
-    DIVITO A META LA STRINGA E CONTROLLO LE LETTERE PARTENDO DA INIZIO E FINE
+<!-- Devo visualizzare il codice per decidere come procedere -->
+for (let i = string.lenght; i > 0; i--)
+    reverseString.push(string.lenght[i]);
+
+
+
+<!-- bonus checkPalindromicString-->
+DIVIDO A META LA STRINGA E CONTROLLO LE LETTERE PARTENDO DA INIZIO E FINE
