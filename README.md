@@ -67,24 +67,19 @@ Buon lavoro e buon divertimento!
 0.  Creare una funzione "checkPalindromic"
     1. Prendi in input "str" ("palindromicWord")
     2. Crea una variabile "reverseString"
-    3.  Ciclo la parola string (FOR)
-        1.  Aggiungo a "reverseString" lettera per lettera di "string" ma invertite
+    3.  Ciclo la parola string al contrario
+        1.  Aggiungo a "reverseString" lettera per lettera di "string"
     4.  SE Confronto "string" con "reverseString"
             ALLORA "palindromic" = true;
             ALTRIMENTI "palindromic" = false;
 
-<!-- Devo visualizzare il codice per decidere come procedere -->
-for (let i = str.lenght; i > 0; i--)
-    reverseString.push(str.lenght[i]);
 
+<!-- ALTERNATIVA checkPalindromicString-->
 
-
-<!-- bonus checkPalindromicString-->
-DIVIDO A META LA STRINGA E CONTROLLO LE LETTERE PARTENDO DA INIZIO E FINE
-
-check = true;
-for (let i = 0; i <= str.length/2; i++) {
-    if (str[i] != str[str.length-i])
-        check = false;
-}
-return check;
+0.  Creare una funzione "checkPalindromic"
+    1. Prendi in input "str" ("palindromicWord")
+    2. Inizializza una variabile "check" a true
+    3. Ciclo metà della parola string
+        1. SE la lettera in posizione i è diversa dal suo opposto
+                ALLORA "check" = false
+    4. Return "check"
